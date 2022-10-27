@@ -1,0 +1,101 @@
+<!-- Jose Manuel Lopez Examen progra 1 -->
+
+<html>
+    <head>
+        
+        <meta charset= "UTF-8">
+        
+        <title>Home</title>
+        
+        <link rel="stylesheet" href="styles.css"/>
+
+        
+        
+    </head>
+    
+    <body>
+        
+        
+        <header>
+            
+            <div class="container">
+                <div class="menu">
+                    
+                    <div class="logo-y-menu">
+                             
+
+                            <nav>
+                                
+                                <ul>
+                                    <li><a href="">HOME</a></li>
+                                    <li><a href="">ALBUMS</a></li>
+                                    <li><a href="">ABOUT</a></li>
+                                    <li><a href="">TOUR</a></li>
+                                </ul>
+
+                              
+                            </nav>
+                        
+                    </div>
+                      
+                            
+                            <a href="">Buy now</a>
+                           
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+                
+            </div>    
+            
+            
+            <div class="content">
+                
+                
+<h1> SMARTTICKET </h1>
+
+
+<p>La mejor pagina de entradas</p>
+
+
+ <img src="images/badbunnylogo.png" alt="conejo malo"/>
+</div>
+
+<h1>Listado de Eventos</h1>
+
+    <thead class="thead-dark">
+<tr>
+<th scope="col">Costo </th>
+<th scope="col">fecha </th>
+<th scope="col">cant</th>
+<th scope="col">lugar </th>
+<th scope="col">artista </th>
+<th scope="col">Eliminar </th>
+</tr>
+    </thead>
+    <tbody>
+    <th:block th:each="user : ${concierto}">
+        <tr>
+            <td th:text="${user.getCosto}"></td>
+            <td th:text="${user.getFecha}"></td>
+            <td th:text="${user.getCant}"></td>
+            <td th:text="${user.getLugar}"></td>
+            <td th:text="${user.getArtista}"></td>
+            <td>
+                <a th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>
+            </td>
+        </tr>
+    </th:block>
+</tbody>
+
+</div>
+<footer th:replace="layout/plantilla :: footer"/>
+</body>
+            
+           
+        
+</html>

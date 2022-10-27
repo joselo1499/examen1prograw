@@ -1,0 +1,58 @@
+body [
+
+margin-center:0px ;
+padding-left:60px ;
+
+
+]
+
+
+.a [
+text-decoration: none;
+
+
+]
+
+.li [
+
+
+list-style: none
+
+]
+
+
+
+.header .menu[
+display: flex;
+justify-content: space-between;
+
+
+
+]
+
+.header .logo-y-menu [
+
+display: flex;
+align-items: center;
+
+
+
+
+]
+
+.container{
+Height: 100 vh;
+Width: 100%;
+background-image: url(../images/background.png);
+Background-position: center;
+Background-size: cover;
+Padding-left: 5%;
+Padding-right: 5%;
+Box-sizing:border-box;
+Position:relative;}.content {
+
+}
+
+.thead-dark {
+
+}
